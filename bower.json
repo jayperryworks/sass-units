@@ -1,0 +1,11 @@
+{
+  "name": "Sass Units",
+  "version": "0.0.1",
+  "ignore": [
+    ".gitignore",
+    ".bowerrc",
+    "README.md",
+    "LICENSE",
+    "bower.json"
+  ]
+}
