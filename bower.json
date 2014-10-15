@@ -1,8 +1,9 @@
 {
-  "name": "Sass Units",
+  "name": "sass-units",
   "version": "0.0.1",
+  "main": "_units.scss",
   "ignore": [
-    ".gitignore",
+    "**/.*",
     "README.md",
     "LICENSE",
     "bower.json"
