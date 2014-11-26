@@ -5,16 +5,16 @@
 $units-size--default: 16px !default;
 
 // Eric Meyer's awesome strip unit helper
-// http://stackoverflow.com/questions/12328259/how-do-you-strip-the-unit-from-any-number-in-sass/12335841#12335841
+// -> http://stackoverflow.com/questions/12328259/how-do-you-strip-the-unit-from-any-number-in-sass/12335841#12335841
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
 
 // convert to rem
 // @param $base (optional): base font size
-// based on http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/
-// and http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
-// https://gist.github.com/bitmanic/1134548
+// -> based on http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/
+// -> and http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+// -> https://gist.github.com/bitmanic/1134548
 @function rem($px-size, $base: $units-size--default) {
   @return #{strip-units($px-size/$base)}rem;
 }
