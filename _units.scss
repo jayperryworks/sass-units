@@ -30,7 +30,7 @@ $units-size--default: 16px !default;
 // a fork of https://github.com/bitmanic/rem
 // @param $px-values: number or list of numbers (0 3px 3px 0)
 // -> NONZERO VALUES MUST HAVE UNITS
-@mixin rem($property, $px-values, $base: units-size--default) {
+@mixin rem($property, $px-values, $base: $units-size--default) {
   // Print the first line in pixel values
   #{$property}: $px-values;
   // If there is only one (numeric) value, return the property/value line for it.
