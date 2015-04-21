@@ -19,6 +19,10 @@ $units-size--default: 16px !default;
   @return #{strip-units($px-size/$base)}rem;
 }
 
+@function em($px-size, $base: $units-size--default) {
+    @return #{strip-units($px-size/$base)}em;
+}
+
 @function percent($px-size, $base: $units-size--default) {
   @return (strip-units($px-size/$base))*100%;
 }
